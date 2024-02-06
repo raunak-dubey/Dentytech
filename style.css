@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PP mori;
+}
+*::selection{
+    background-color: var(--white);
+    color: var(--black);
+}
+:root{
+    --black: #1d1b1b;
+    --white: #f9f3ef;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+}
+main{
+    background-color: var(--black);
+    color: var(--white);
+    cursor: none;
+}
+#cursor{
+    height: 20px;
+    width: 20px;
+    mix-blend-mode: difference;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    left: 0;
+    background-color: yellow;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+
+}
+/* // ============================== heroSection ====================== */
+#heroSection{
+    height: 100vh;
+    width: 100%;
+}
+header {
+    padding: 40px 60px;
+    height: 60px;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header #menu svg{
+    height: 30px;
+}
+#logo h2{
+    text-transform: uppercase;
+    font-size: 22px;
+    font-size: 500;
+    
+}
+#button{
+    display: flex;
+    gap: 10px;
+}
+.btn{
+    padding: 10px 12px;
+    background-color: var(--black);
+    border: 1px solid var(--white);
+    font-size: 16px;
+    font-weight: 900;
+}
+.btn:nth-child(2){
+    background-color: var(--white);
+    color: var(--black);
+}
+
+#heroContent>h1{
+    font-size: 180px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+#heroContent>img{
+    height: 500px;
+    object-position: center;
+    object-fit: cover;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    user-select: none;
+}
+#heroContent #img1{
+    transform: translate(-50%, -50%) rotate(-20deg);
+}
+#heroContent #img2{
+    transform: translate(-50%, -50%) rotate(-15deg);
+}
+#heroContent #img3{
+    transform: translate(-50%, -50%) rotate(-10deg);
+}
+#heroContent #img4{
+    transform: translate(-50%, -50%) rotate(-5deg);
+}
+#heroContent #img5{
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+#heroContent #btm-left{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-size: 15px;
+}
+#heroContent #btm-right{
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    font-size: 15px;
+}
+#btm-right i{
+    font-size: 24px;
+    margin-right: 10px;
+}
+#btm-right h5{
+    margin-top: 10px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+#btm-center{
+    position: absolute;
+    bottom: 5%;
+    font-size: 15px;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+}
